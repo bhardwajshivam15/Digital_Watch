@@ -4,7 +4,7 @@ function displayTime() {
     const second = document.getElementById("b3");
     const mode = document.getElementById("b4");
     const now = new Date();
-    const hours = now.getHours()>9?now.getHours():"0"+now.getHours();
+    const hours = now.getHours()>9?now.getHours():now.getHours();
     if(hours>=12) mode.innerHTML="PM";
     else mode.innerHTML="AM";
     const newhour = (hours>12?Number(hours)-12:hours);
