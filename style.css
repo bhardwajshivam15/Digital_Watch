@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap');
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+body{
+    background-color: rgb(226, 98, 226);
+}
+.clock{
+    background:none;
+    /* margin: 3rem; */
+    display: flex;
+    min-width: 90%;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    margin-top: 3rem;
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+}
+.clock>div{
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+    margin: 1rem;
+    height: 45%;
+    width: 16%;
+    border-radius: 4px;
+    
+}
+.clock>a{
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+    color: white;
+}
+#b4{
+    font-size: 6rem;
+    background-color: black;
+    color: white;
+    border: none;
+}
+@media screen and (max-width:1000px){
+   .clock>div{
+    height: 30%;
+    font-size: 4rem;
+   }
+   #b4{
+    font-size: 4rem;
+   }
+}
+@media screen and (max-width:750px){
+    .clock>div{
+     height: 22%;
+     font-size: 3rem;
+    }
+    #b4{
+        font-size: 3rem;
+       }
+       h1{
+        font-size: 3rem;
+       }
+ }
+ @media screen and (max-width:450px){
+    .clock>div{
+     height: 11%;
+     font-size: 2.5rem;
+    }
+    #b4{
+        font-size: 2.5rem;
+       }
+ }
+ @media screen and (max-width:330px){
+    h1{
+        font-size: 2rem;
+       }
+ }
